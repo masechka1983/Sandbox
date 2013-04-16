@@ -1,357 +1,408 @@
 /*General settings*/
 
-*{
+*
+{
     margin: 0;
     padding: 0;
-    
-    
 }
- html{
-        height: 100%;
-       
-    }
-html, body{
-       min-height: 100%;
 
-    }
-    body{      
-        width:  960px;
-        margin: 0 auto;
-        height:  100%;
-        font-family: Sintony, sans-serif;
-        position: relative;
-        margin-bottom: 25px
-    }
-    
-    .padder{
-        padding: 10px;
+html
+{
+    height: 100%;
+}
+
+html, body
+{
+    min-height: 100%;
+}
+
+body
+{
+    width: 960px;
+    margin: 0 auto;
+    height: 100%;
+    font-family: Sintony, sans-serif;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.padder
+{
+    padding: 10px;
 }
 
 /*forside billeder*/
 
-#matew{
+#matew
+{
     position: absolute;
     z-index: 1;
     top: 24px;
     left: 10px;
-
-    
 }
-#hasselblad_logo_web{
+
+#hasselblad_logo_web
+{
     position: absolute;
     top: 84px;
     left: 70px;
     z-index: 2;
-
 }
-#green_energies{
+
+#green_energies
+{
     position: absolute;
     top: 144px;
     left: 10px;
     z-index: 3;
-
 }
-#che_guevara{
+
+#che_guevara
+{
     position: absolute;
     top: 24px;
     right: 25px;
     z-index: 4;
-
 }
-#wild_boys1{
+
+#wild_boys1
+{
     position: absolute;
     top: 144px;
     right: 145px;
     z-index: 5;
-
 }
-#broken_heart{
+
+#broken_heart
+{
     position: absolute;
     bottom: 0;
     left: 10px;
     z-index: 6;
-
 }
-#dag1{
+
+#dag1
+{
     position: absolute;
     bottom: 120px;
     left: 130px;
     z-index: 7;
-
 }
-#child80{
+
+#child80
+{
     position: absolute;
     bottom: 60px;
     right: 25px;
     z-index: 8;
-
 }
-#wild_boys2{
+
+#wild_boys2
+{
     position: absolute;
     bottom: 0;
     right: 85px;
     z-index: 9;
-
 }
 
 /*header*/
 
-    #header{
+#header
+{
     height: 60px;
     font-size: 100%;
     width: 413px;
     margin: 0 auto;
 }
-#header div{
-    float: left;
+
+    #header div
+    {
+        float: left;
+    }
+
+h1
+{
+    padding-top: 20px;
+    font-size: 200%;
+    line-height: 43px;
 }
 
-    h1{
-        padding-top: 20px;
-        font-size: 200%;
-        line-height: 43px
-}
-       
 
-    #navn{
-        vertical-align: middle;
-        color: black;
-        height: 20px;
-        font-family: Noto Sans, sans-serif;
-    }
-    
-    #logo{
-        width: 50px;
-        padding:0 10px 0 15px;
-    }
-    
-    #efternavn{
-        vertical-align: middle;
-        color: black;
-        height: 20px;
-        font-family: Noto Sans, sans-serif;
-    }
-    .underline{
-       padding-top: 10px
-    }
-    .underline div{
+#navn
+{
+    vertical-align: middle;
+    color: black;
+    height: 20px;
+    font-family: Noto Sans, sans-serif;
+}
+
+#logo
+{
+    width: 50px;
+    padding: 0 10px 0 15px;
+}
+
+#efternavn
+{
+    vertical-align: middle;
+    color: black;
+    height: 20px;
+    font-family: Noto Sans, sans-serif;
+}
+
+.underline
+{
+    padding-top: 10px;
+}
+
+    .underline div
+    {
         float: left;
         width: 419px;
         border-bottom: 1px solid gray;
         height: 2px;
         border-top: 1px solid gray;
     }
-    
-    .underline div:last-child{
-        margin-left: 80px;
-    }
-    
- /*navigation forside*/
- 
-    #navigation{
-        width: 100%;
-        height: 80px;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 175px;
-        
-    }
-    
-    nav a{
-      
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: 20px;
-        width: 140px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        border-radius: 10px;
-        padding: 5px;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        
-        
-    }
-    #red{
-        display: inline-block;
-        background-color:#FF0000;
-        color:white;
-        text-decoration: none;
-        width: 140px;
-        text-align: center;
-    }
-    #violet{
-        display: inline-block;
-        background-color:#A64D90;
-        color:white;
-        text-decoration: none;
-        width: 140px;
-        
-    }
-    #green{
-        display: inline-block;
-        background-color: #6AA90F;
-        color: white;
-        text-decoration: none;
-        width: 140px;
-        
-    }
-    
+
+        .underline div:last-child
+        {
+            margin-left: 80px;
+        }
+
+/*navigation forside*/
+
+#navigation
+{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 175px;
+}
+
+nav a
+{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    width: 140px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#red
+{
+    display: inline-block;
+    background-color: #FF0000;
+    color: white;
+    text-decoration: none;
+    width: 140px;
+    text-align: center;
+}
+
+#violet
+{
+    display: inline-block;
+    background-color: #A64D90;
+    color: white;
+    text-decoration: none;
+    width: 140px;
+}
+
+#green
+{
+    display: inline-block;
+    background-color: #6AA90F;
+    color: white;
+    text-decoration: none;
+    width: 140px;
+}
+
 /*content forside*/
 
-    #content{
-        height: 170px;
-        text-align: center;
-        
-    }
-    
+#content
+{
+    height: 170px;
+    text-align: center;
+}
+
 /*navigation portfolio*/
-    #hoved-menu{
-       
-        width: 100%;
-        color: black;
-        width: 286px;
-        font-family: Verdana, Geneva, sans-serif;
-        height: 20px;
-        text-decoration: none;
-        margin: 0 auto;
-        padding: 20px 0 20px 0;
-        }
-        
-    #hoved-menu>nav a{
+#hoved-menu
+{
+    width: 100%;
+    color: black;
+    width: 286px;
+    font-family: Verdana, Geneva, sans-serif;
+    height: 20px;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+}
+
+    #hoved-menu > nav a
+    {
         color: black;
         text-decoration: none;
         width: 90px;
     }
-    
-    #red-text:hover, #red-text.active{
-        color: #FF0000;
-        text-decoration: none;
-        
+
+#red-text:hover, #red-text.active
+{
+    color: #FF0000;
+    text-decoration: none;
+}
+
+#violet-text:hover, #violet-text.active
+{
+    color: #A64D90;
+    text-decoration: none;
+}
+
+#green-text:hover, #green-text.active
+{
+    color: #6AA90F;
+    text-decoration: none;
+}
+
+#submenu a
+{
+    background-color: #CCCCCC;
+    font-family: Verdana, Geneva, sans-serif;
+    width: 50px;
+    color: #000000;
+    text-decoration: none;
+    padding: 4px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+    #submenu a:hover
+    {
+        background-color: #999999;
     }
-    #violet-text:hover, #violet-text.active{
-        color: #A64D90;
-        text-decoration: none;
-        
-    }
-    
-    #green-text:hover, #green-text.active{
-        color: #6AA90F;
-        text-decoration: none;
-        
-    }
-   
-    #submenu a{
-        background-color:#CCCCCC;
-        font-family: Verdana, Geneva, sans-serif;
-        width: 50px;
-        color: #000000;
-        text-decoration: none;
-        padding: 4px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-      
-    }
-    #submenu a:hover{
-        background-color:#999999;
-    }
-    #submenu a.active{
-        background-color:#999999;
+
+    #submenu a.active
+    {
+        background-color: #999999;
     }
 /*sections, articles portfolio*/
 
-section{
+section
+{
     display: block;
 }
 
-article{
-        display: inline-block;
-        vertical-align: top;
-        min-height: 332px;
+article
+{
+    display: inline-block;
+    vertical-align: top;
+    min-height: 332px;
 }
-    .referancer{
-        display: inline-block;
-        width: 680px;
-        height: 300px;
-        
-        
-    }
-    .referancer img{
+
+.referancer
+{
+    float: left;
+    width: 205px;
+    height: 300px;
+}
+
+    .referancer img
+    {
         margin-top: 5px;
         margin-right: 10px;
     }
-    
-    .picture{
-        width: 458px;
-        height: 300px;
-        margin-top: 35px;
-    }
-    .picture img{
+
+.picture
+{
+    width: 458px;
+    height: 300px;
+    margin-top: 35px;
+}
+
+    .picture img
+    {
         padding-top: 0;
         border: 1px solid black;
-       
     }
-    #text-photoshop{
-        display: inline-block;
-        min-height: auto;
-        font-family: Sintony, sans-serif;
-        height: 300px;
-        width: 224px;
-        padding: 0 0 0 10px;
-        overflow-y: scroll;
-        margin-top: 34px;
-        left: 700px;
-        
-        
-    }
-    h3{
-        margin-bottom: 5px;
-    }
-    
-    #galleri{
-        width: 220px;
-        height: 332px;
-    }
-    
-    .billede img{
-        width: 60px;
-        height: 60px;
-    }
-    #screen img{
-        width: 458px;
-        height: 298px;
-    }
-    #screen{
-        position: relative;
-        display: inline-block;
-        top: -309px;
-        left: 220px;
-    }
-    #screen-flash{
-        position: relative;
-        display: inline-block;
-        top: -154px;
-        left: 220px;
-    }
-  
+
+.text-photoshop
+{
+    display: inline-block;
+    min-height: auto;
+    font-family: Sintony, sans-serif;
+    height: 300px;
+    width: 224px;
+    padding: 0 0 0 10px;
+    overflow-y: scroll;
+    margin-top: 34px;
+    left: 700px;
+}
+
+h3
+{
+    margin-bottom: 5px;
+}
+
+#galleri
+{
+    width: 220px;
+    height: 332px;
+}
+
+.billede img
+{
+    width: 60px;
+    height: 60px;
+}
+
+#screen img
+{
+    width: 458px;
+    height: 298px;
+}
+
+#screen
+{
+    display: block;
+    float: left;
+    padding-top: 36px;
+}
+
+#screen-flash
+{
+    position: relative;
+    display: inline-block;
+    top: -154px;
+    left: 220px;
+}
+
 /*sections, articles profil*/
 
-    article img{
+article img
+{
+    float: left;
+    padding-top: 12px;
+}
+
+
+#kea
+{
+    height: 127px;
+    min-height: auto;
+}
+
+    #kea h3
+    {
         float: left;
-        padding-top: 12px;
+        padding: 10px 0 0 25px;
     }
-    
-    
-    #kea{
-        height: 127px;
-        min-height: auto;
-    }
-    #kea h3{
-        float: left;
-        padding: 10px 0 0 25px
-    }
-    #kea p{
-        
+
+    #kea p
+    {
         min-height: auto;
         font-family: Sintony, sans-serif;
         height: 68px;
@@ -359,17 +410,21 @@ article{
         padding: 13px 0 0 25px;
         overflow-y: scroll;
     }
-    
-    #xgtusx{
-        height: 127px;
-        min-height: auto;
-    }
-    #xgtusx h3{
+
+#xgtusx
+{
+    height: 127px;
+    min-height: auto;
+}
+
+    #xgtusx h3
+    {
         float: left;
-        padding: 10px 0 0 25px
+        padding: 10px 0 0 25px;
     }
-    #xgtusx p{
-        
+
+    #xgtusx p
+    {
         min-height: auto;
         font-family: Sintony, sans-serif;
         height: 68px;
@@ -378,33 +433,42 @@ article{
         overflow-y: scroll;
     }
 /*article cv*/
-    
-    .cv{
-        margin-top: 15px;
-        height: 400px;
-        width: 696px;
-        overflow-y: scroll;
-    }
-    .cv h3{
+
+.cv
+{
+    margin-top: 15px;
+    height: 400px;
+    width: 696px;
+    overflow-y: scroll;
+}
+
+    .cv h3
+    {
         margin-bottom: 10px;
     }
-    .cv p{
+
+    .cv p
+    {
         margin-bottom: 5px;
         min-height: auto;
     }
-    
+
 /*article om mig*/
-    
-    #om-mig{
-        height: 127px;
-        min-height: auto;
-    }
-    #om-mig h3{
+
+#om-mig
+{
+    height: 127px;
+    min-height: auto;
+}
+
+    #om-mig h3
+    {
         float: left;
-        padding: 10px 0 0 25px
+        padding: 10px 0 0 25px;
     }
-    #om-mig p{
-        
+
+    #om-mig p
+    {
         min-height: auto;
         font-family: Sintony, sans-serif;
         height: 68px;
@@ -412,17 +476,21 @@ article{
         padding: 13px 0 0 25px;
         overflow-y: scroll;
     }
-    
-    #familie{
-        height: 127px;
-        min-height: auto;
-    }
-    #familie h3{
+
+#familie
+{
+    height: 127px;
+    min-height: auto;
+}
+
+    #familie h3
+    {
         float: left;
-        padding: 10px 0 0 25px
+        padding: 10px 0 0 25px;
     }
-    #familie p{
-        
+
+    #familie p
+    {
         min-height: auto;
         font-family: Sintony, sans-serif;
         height: 68px;
@@ -432,79 +500,93 @@ article{
     }
 /*section, div kontakt*/
 
-.kontakt-info{
+.kontakt-info
+{
     margin-top: 0;
     display: inline-block;
     width: 460px;
 }
 
-#kontakt_me{
+#kontakt_me
+{
     width: 298px;
     display: inline-block;
 }
-#adresse{
+
+#adresse
+{
     display: inline-block;
     margin-bottom: 8px;
     width: 100%;
-      
 }
 
-#kontakt-text{
+#kontakt-text
+{
     display: inline-block;
     width: 100%;
 }
-#qr{
+
+#qr
+{
     display: inline-block;
     width: 158px;
-    
 }
 
-.formular p{
+.formular p
+{
     width: 50px;
     margin-bottom: 2px;
     font-size: 60%;
- 
 }
 
-.formular div{
+.formular div
+{
     display: inline-block;
     width: 400px;
     height: 20px;
 }
-.formular textarea{
+
+.formular textarea
+{
     width: 446px;
     height: 124px;
 }
-.formular input[type=text]{
+
+.formular input[type=text]
+{
     width: 200px;
     height: 20px;
 }
 
-#emne {
+#emne
+{
     height: 100px;
 }
 
-#map{
+#map
+{
     width: 45%;
     display: inline-block;
-    
 }
 
 /*section link*/
 
-#link{
+#link
+{
     margin-top: 25px;
 }
 
-#link p{
-    margin-right: 12px;
-    display: inline-block;
-    vertical-align: top;
-    width: 446px;
-}
+    #link p
+    {
+        margin-right: 12px;
+        display: inline-block;
+        vertical-align: top;
+        width: 446px;
+    }
 /*footer*/
 
-footer{
+footer
+{
     position: relative;
     display: block;
     -webkit-border: 5px;
@@ -512,17 +594,19 @@ footer{
     border: 5px;
     background-color: #CCCCCC;
     width: 920px;
-    Left:10px;
+    Left: 10px;
     bottom: 0;
     height: 25px;
-
-    
-}
-footer p{
-    width: 100%;
-    text-align: left;
-    padding: 4px;
-    
 }
 
-    
+    footer p
+    {
+        width: 100%;
+        text-align: left;
+        padding: 4px;
+    }
+
+.hide
+{
+    display: none;
+}
