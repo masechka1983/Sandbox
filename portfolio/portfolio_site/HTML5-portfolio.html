@@ -8,19 +8,22 @@
     <title>Yevgeniya Petrenko</title>
     <link rel="stylesheet" href="style-portfolio.css" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css' />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">  
+    <script src="http://code.jquery.com/jquery-1.9.1.js">  
     </script>
     <script type="text/javascript">
-        //$(document).ready(function () {
+        $(document).ready(function () {
             $('img').click(function () {
                 var self = this;
                 var article = $(self).parent().find('article').get(0);
                 var header = $($(article).find('h3').get(0)).text();
                 var p = $($(article).find('p').get(0)).text();
+                var image = $(self).parent().find('img').get(0);
+                var uri = $(image).attr('src');
+                $('#large-img').attr('src',uri);
                 $('.template-h3').text(header);
                 $('.template-p').text(p);
             });
-        //});
+        });
     </script>
 
 </head>
@@ -118,10 +121,10 @@
                             </p>
                         </article>
                     </div>
-                    <div class="billede" onclick="document.getElementById('screen').innerHTML=this.innerHTML">
+                    <div class="billede">
                         <img src="plakat-ny_banner.gif" alt="Hasselblad plakat">
                     </div>
-                    <div class="billede" onclick="document.getElementById('screen').innerHTML=this.innerHTML">
+                    <div class="billede">
                         <img src="cat-fancy_banner1.gif" alt="Cat fancy magazine">
                     </div>
                     <div class="billede" onclick="document.getElementById('screen').innerHTML=this.innerHTML">
@@ -156,7 +159,7 @@
             <!-- lukker article class referancer-->
 
             <div id="screen">
-                <img src="broken-heart-banner.gif" alt="Broken heart" />
+                <img id='large-img' src="broken-heart-banner.gif" alt="Broken heart" />
             </div>
 
 
