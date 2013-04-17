@@ -1,97 +1,150 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="keywords" content="Hjemmesider, Photoshop, Plakater, Animation, Flash, Logo"/>
-        <meta name="description" content="Vi laver hjemmesider, plakater, animation, logoer"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link href="favicon.ico" rel="icon" type="image/x-icon" />
-        <title>Yevgeniya Petrenko</title>
-        <link rel="stylesheet" href="style-portfolio.css" type="text/css" />
-        <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css' />
-      
-    </head>
-    
-    <body>
-        <div class="padder">
-      
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Hjemmesider, Photoshop, Plakater, Animation, Flash, Logo" />
+    <meta name="description" content="Vi laver hjemmesider, plakater, animation, logoer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Yevgeniya Petrenko</title>
+    <link rel="stylesheet" href="style-portfolio.css" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css' />
+    <script src="http://code.jquery.com/jquery-1.9.1.js">  
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('img').click(function () {
+                var image = this;
+                var article = $(image).parent().find('article').get(0);
+                var header =$($(article).find('h3').get(0)).text();
+                var p =$($(article).find('p').get(0)).text();
+                var image = $(image).parent().find('img').get(0);
+                var uri = $(image).attr('src');
+                $('#large-img').attr('src',uri);
+                $('.template-h3').text(header);
+                $('.template-p').text(p);
+
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="padder">
+
         <div id="header">
-            <div id="navn"><h1>Yevgeniya</h1>
+            <div id="navn">
+                <h1>Yevgeniya</h1>
             </div>
-                    
+
             <div id="logo">
                 <a href="HTML5-forside.html">
-                <img src="my_logo.png" width="43" alt="Logo screendump"/>
+                    <img src="my_logo.png" width="43" alt="Logo screendump" />
                 </a>
             </div>
-           
-                    
-            <div id="efternavn"><h1>Petrenko</h1>
+
+
+            <div id="efternavn">
+                <h1>Petrenko</h1>
             </div>
 
 
-            
-         </div> <!-- lukker div id header-->
-         <div class="underline">
+
+        </div>
+        <!-- lukker div id header-->
+        <div class="underline">
             <div>
             </div>
             <div>
             </div>
         </div>
-                     <div id="hoved-menu">
-              <nav>
+        <div id="hoved-menu">
+            <nav>
                 <a id="red-text" class="active" href="HTML5-portfolio.html">Portfolio</a>
                 <a id="violet-text" href="HTML5-profil.html">Profil</a>
                 <a id="green-text" href="HTML5-kontakt.html">Kontakt</a>
-              </nav>
-             </div>
-              
-    <section> 
-        <article class="referancer">
-        <div id="submenu">
-                     <a href="HTML5-portfolio.html">Photoshop</a>
-                     <a class="active" href="HTML5-flash.html">Flash</a>
-                     <a href="HTML5-logo.html">Logo</a>
+            </nav>
         </div>
-        <div id="galleri">
-            
-                <div class="billede" onclick="document.getElementById('screen-flash').innerHTML=this.innerHTML" >
-                    <img src="musik_farver_banner.gif" alt="Musik farver livet">
+
+
+
+        <section>
+            <article class="referancer">
+                <div id="submenu">
+                    <a href="HTML5-portfolio.html">Photoshop</a>
+                    <a class="active" href="HTML5-flash.html">Flash</a>
+                    <a href="HTML5-logo.html">Logo</a>
                 </div>
-                <div class="billede" onclick="document.getElementById('screen-flash').innerHTML=this.innerHTML" >
-                    <img src="bil_banner.gif" alt="Kørende bil">
-                </div>
-                <div class="billede" onclick="document.getElementById('screen-flash').innerHTML=this.innerHTML" >
-                    <img src="bondergaard_banner.gif" alt="Bondegaard spil">
-                </div>
-                <div class="billede" onclick="document.getElementById('screen-flash').innerHTML=this.innerHTML" >
-                    <img src="frog_banner.gif" alt="Frø hopper">
-                </div>
-                <div class="billede" onclick="document.getElementById('screen-flash').innerHTML=this.innerHTML" >
-                    <img src="hasselblad_film_banner.gif" alt="Hasselblad film">
-                </div>
-                
-            <div id="screen-flash">
-                 <img src="bondergaard_banner.gif" alt="Bondegaard spil"/>
+
+                <div id="galleri">
+                    <div class="billede">
+                        <img src="musik_farver_banner.gif" alt="Musik farver livet">
+                        <article class="text-photoshop hide">
+                            <h3>Musik farver livet</h3>
+                            <p>
+                                kumna Opgaven var at skabe et spil med sjøv motiver.
+                                Jeg har valgt at lave bondegård spil, hvor man skal gætte, hvad skal man trykke på. Der er bestemt rækkefølge på hvilke animation skal man trykke. Hvis man trykker forkert 3 gang i trække, så skal man starte spil forfra.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="billede">
+                        <img src="bil_banner.gif" alt="Kørende bil">
+                        <article class="text-photoshop hide">
+                            <h3>Kørende bil</h3>
+                            <p>
+                                pumba Opgaven var at skabe et spil med sjøv motiver.
+                                Jeg har valgt at lave bondegård spil, hvor man skal gætte, hvad skal man trykke på. Der er bestemt rækkefølge på hvilke animation skal man trykke. Hvis man trykker forkert 3 gang i trække, så skal man starte spil forfra.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="billede">
+                        <img src="bondergaard_banner.gif" alt="Bondegaard spil">
+                        <article class="text-photoshop hide">
+                            <h3>Bondegård spil</h3>
+                            <p>
+                                rumba var at skabe et spil med sjøv motiver.
+                                Jeg har valgt at lave bondegård spil, hvor man skal gætte, hvad skal man trykke på. Der er bestemt rækkefølge på hvilke animation skal man trykke. Hvis man trykker forkert 3 gang i trække, så skal man starte spil forfra.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="billede">
+                        <img src="frog_banner.gif" alt="Frø hopper">
+                    </div>
+                    <div class="billede">
+                        <img src="hasselblad_film_banner.gif" alt="Hasselblad film">
+                    </div>
+                    
+                </div><!--div id galleri-->
+
+            </article><!-- lukker article class referancer-->
+
+            <div id="screen">
+                <img id='large-img' src="bondergaard_banner.gif" alt="Bondegaard spil" />
             </div>
-        </div><!--div id galleri-->
-                
-                
-        </article> <!-- lukker article class referancer-->
-        
-        <article class="text-photoshop">
-            <h3>Bondegård spil</h3>
-            <p>
-Opgaven var at skabe et spil med sjøv motiver.
-Jeg har valgt at lave bondegård spil, hvor man skal gætte, hvad skal man trykke på. Der er bestemt rækkefølge på hvilke animation skal man trykke. Hvis man trykker forkert 3 gang i trække, så skal man starte spil forfra.
-            </p>
-        </article>
-    </section>
-         
-        </div> <!-- lukker div class padder-->
-        <footer>
-            <p>Yevgeniya Petrenko Adresse: Nørrebro 11, 4653 Karise, Danmark E-mail: masechka1983@gmail.com
-            </p>
-        </footer>
-    </body>
+
+
+
+            <article class="text-photoshop template">
+                <h3 class="template-h3">Bondegård spil</h3>
+                <p class="template-p">
+                    Opgaven var at skabe et spil med sjøv motiver.
+                    Jeg har valgt at lave bondegård spil, hvor man skal gætte, hvad skal man trykke på. Der er bestemt rækkefølge på hvilke animation skal man trykke. Hvis man trykker forkert 3 gang i trække, så skal man starte spil forfra.
+                </p>
+            </article>
+        </section>
+
+    </div>
+    <!-- lukker div class padder-->
+    <footer>
+        <p>
+            Yevgeniya Petrenko Adresse: Nørrebro 11, 4653 Karise, Danmark E-mail: masechka1983@gmail.com 
+        </p>
+    </footer>
+
+</body>
 </html>
        
+
+
+
+
