@@ -1,99 +1,166 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="keywords" content="Hjemmesider, Photoshop, Plakater, Animation, Flash, Logo"/>
-        <meta name="description" content="Vi laver hjemmesider, plakater, animation, logoer"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link href="favicon.ico" rel="icon" type="image/x-icon" /> 
-        <title>Yevgeniya Petrenko</title>
-        <link rel="stylesheet" href="style-portfolio.css" type="text/css" />
-        <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css' />
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Hjemmesider, Photoshop, Plakater, Animation, Flash, Logo" />
+    <meta name="description" content="Vi laver hjemmesider, plakater, animation, logoer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Yevgeniya Petrenko</title>
+    <link rel="stylesheet" href="style-portfolio.css" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css' />
+    <script src="http://code.jquery.com/jquery-1.9.1.js">  
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('img').click(function () {
+                var image = this;
+                var article = $(image).parent().find('article').get(0);
+                var header =$($(article).find('h3').get(0)).text();
+                var p =$($(article).find('p').get(0)).text();
+                var image = $(image).parent().find('img').get(0);
+                var uri = $(image).attr('src');
+                $('#large-img').attr('src',uri);
+                $('.template-h3').text(header);
+                $('.template-p').text(p);
 
-      
-    </head>
-    
-    <body>
-        <div class="padder">
-      
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="padder">
+
         <div id="header">
-            <div id="navn"><h1>Yevgeniya</h1>
+            <div id="navn">
+                <h1>Yevgeniya</h1>
             </div>
-                    
+
             <div id="logo">
                 <a href="HTML5-forside.html">
-                <img src="my_logo.png" width="43" alt="Logo screendump"/>
+                    <img src="my_logo.png" width="43" alt="Logo screendump" />
                 </a>
             </div>
-           
-                    
-            <div id="efternavn"><h1>Petrenko</h1>
+
+
+            <div id="efternavn">
+                <h1>Petrenko</h1>
             </div>
 
 
-            
-         </div> <!-- lukker div id header-->
-         <div class="underline">
+
+        </div>
+        <!-- lukker div id header-->
+        <div class="underline">
             <div>
             </div>
             <div>
             </div>
         </div>
-                     <div id="hoved-menu">
-              <nav>
+        <div id="hoved-menu">
+            <nav>
                 <a id="red-text" class="active" href="HTML5-portfolio.html">Portfolio</a>
                 <a id="violet-text" href="HTML5-profil.html">Profil</a>
                 <a id="green-text" href="HTML5-kontakt.html">Kontakt</a>
-              </nav>
-             </div>
-            
-               
-        
-    <section> 
-        <article class="referancer">
-        <div id="submenu">
-                     <a href="HTML5-portfolio.html">Photoshop</a>
-                     <a href="HTML5-flash.html">Flash</a>
-                     <a class="active" href="HTML5-logo.html">Logo</a>
+            </nav>
         </div>
-        
-        <div id="galleri">
-            
-                <div class="billede" onclick="document.getElementById('screen-flash').innerHTML=this.innerHTML" >
-                    <img src="logo-green-energies-banner.gif" alt="Green energies">
-                </div>
-                <div class="billede" onclick="document.getElementById('screen-flash').innerHTML=this.innerHTML" >
-                    <img src="hasselblad-logo-banner.gif" alt="Hasselblad logo">
-                </div>
-                <div class="billede" onclick="document.getElementById('screen-flash').innerHTML=this.innerHTML" >
-                    <img src="my_logo_banner.gif" alt="Mit logo">
-                </div>
-                <div class="billede" onclick="document.getElementById('screen-flash').innerHTML=this.innerHTML" >
-                    <img src="tankespind_logo_banner.gif" alt="Tankespind logo">
-                </div>
-                
-                <div id="screen-flash">
-                    <img src="logo-green-energies-banner.gif" alt="Green energies"/>
-                </div>
-                
-        
-        </div><!--div id galleri-->
-          
-        </article> <!-- lukker article class referancer-->
-        
-        <article class="text-photoshop">
-            <h3>Green energies logo</h3>
-            <p>
-Logo var skabet til et virksomhed, der producerer den økologiske energi ved vindmøller. Jeg valgt at lave logoet i naturlig farve –grøn. Blade på logoet ligger sådan, at man kan se form af vindmølle. På den måde associeres logo med økologisk energi. Og virksomheds navn står ved siden af logoet.
 
-            </p>
-        </article>
-    </section>    
-         
-        </div> <!-- lukker div class padder-->
-        <footer>
-            <p>Yevgeniya Petrenko Adresse: Nørrebro 11, 4653 Karise, Danmark E-mail: masechka1983@gmail.com
-            </p>
-        </footer>
-    </body>
+
+
+        <section>
+            <article class="referancer">
+                <div id="submenu">
+                    <a href="HTML5-portfolio.html">Photoshop</a>
+                    <a href="HTML5-flash.html">Flash</a>
+                    <a class="active" href="HTML5-logo.html">Logo</a>
+                </div>
+
+                <div id="galleri">
+                    <div class="billede">
+                        <img src="logo-green-energies-banner.gif" alt="Green energies logo">
+                        <article class="text-photoshop hide">
+                            <h3>Green energies logo</h3>
+                            <p>
+                                kumna Logo var skabet til et virksomhed, der producerer den økologiske energi ved vindmøller. Jeg valgt at lave logoet i naturlig farve –grøn. Blade på logoet ligger sådan, at man kan se form af vindmølle. På den måde associeres logo med økologisk energi. Og virksomheds navn står ved siden af logoet.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="billede">
+                        <img src="hasselblad-logo-banner.gif" alt="Hasselblad logo">
+                        <article class="text-photoshop hide">
+                            <h3>Hasselblad logo</h3>
+                            <p>
+                                pumba Logo var skabet til et virksomhed, der producerer den økologiske energi ved vindmøller. Jeg valgt at lave logoet i naturlig farve –grøn. Blade på logoet ligger sådan, at man kan se form af vindmølle. På den måde associeres logo med økologisk energi. Og virksomheds navn står ved siden af logoet.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="billede">
+                        <img src="my_logo_banner.gif" alt="Mit logo">
+                        <article class="text-photoshop hide">
+                            <h3>Mit logo</h3>
+                            <p>
+                                rumba Logo var skabet til et virksomhed, der producerer den økologiske energi ved vindmøller. Jeg valgt at lave logoet i naturlig farve –grøn. Blade på logoet ligger sådan, at man kan se form af vindmølle. På den måde associeres logo med økologisk energi. Og virksomheds navn står ved siden af logoet.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="billede">
+                        <img src="tankespind_logo_banner.gif" alt="Tankespind logo">
+                        <article class="text-photoshop hide">
+                            <h3>Tankespind logo</h3>
+                            <p>
+                                zumba Logo var skabet til et virksomhed, der producerer den økologiske energi ved vindmøller. Jeg valgt at lave logoet i naturlig farve –grøn. Blade på logoet ligger sådan, at man kan se form af vindmølle. På den måde associeres logo med økologisk energi. Og virksomheds navn står ved siden af logoet.
+                            </p>
+                        </article>
+                    </div>
+                    
+                </div><!--div id galleri-->
+
+            </article><!-- lukker article class referancer-->
+
+            <div id="screen">
+                <img id='large-img' src="logo-green-energies-banner.gif" alt="Green energies logo" />
+            </div>
+
+
+
+            <article class="text-photoshop template">
+                <h3 class="template-h3">Green energies logo</h3>
+                <p class="template-p">
+                    Logo var skabet til et virksomhed, der producerer den økologiske energi ved vindmøller. Jeg valgt at lave logoet i naturlig farve –grøn. Blade på logoet ligger sådan, at man kan se form af vindmølle. På den måde associeres logo med økologisk energi. Og virksomheds navn står ved siden af logoet.
+                </p>
+            </article>
+        </section>
+
+    </div>
+    <!-- lukker div class padder-->
+    <footer>
+        <p>
+            Yevgeniya Petrenko Adresse: Nørrebro 11, 4653 Karise, Danmark E-mail: masechka1983@gmail.com 
+        </p>
+    </footer>
+
+</body>
 </html>
        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
