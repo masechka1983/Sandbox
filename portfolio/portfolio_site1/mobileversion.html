@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>mobiltelefonløsning</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js">
+    </script>
+    <style>
+        #map img{width: 100%;}
+        #me-forside img{width: 99%;}
+        img{width: 100%;}
+        #logomobile img{width: 15%; display: inline-block; margin-left: 4%;}
+        #logomobile h2{display: inline-block;}
+        #logomobile{text-align: center;}
+    </style>
+</head>
+
+<body>
+    <div id="home" data-role="page" data-theme="c">
+        <div data-role="header" data-theme="a">
+            <div id="logomobile">
+                <h2>Yevgeniya</h2>
+                <img src="my_logo.png">
+                <h2>Petrenko</h2>
+            </div>
+        </div>
+        <div data-role="content">
+            <div data-role="navbar">
+                <ul>
+                    <li><a data-transition="flip" href="#portfolio">Portfolio</a></li>
+                    <li><a data-transition="flip" href="#profil">Profil</a></li>
+                    <li><a data-transition="flip" href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+            <div id="me-forside">
+                <img src="me_web.gif" alt="Mig">
+            </div>
+        </div>    
+    </div>
+      <div id="portfolio" data-role="page">
+        <div data-role="header">
+            <a href="#home">Retur</a>
+            <h3>Portfolio</h3>
+        </div>
+        <div data-role="content">
+            <a data-transition="slide" data-role="button" href="#portfolio">Portfolio</a>
+            <a data-transition="slide" data-role="button" href="#profil">Profil</a>
+            <a data-transition="slide" data-role="button" href="#kontakt">Kontakt</a>
+            <div data-role="collapsible">
+                <h3>Se billeder</h3>
+                <h4>Polaroidrammerne</h4><img src="matew_banner.gif" alt="Polaroidrammerne">
+                <h4>Film plakat</h4><img src="broken-heart-banner.gif" alt="Film plakat">
+                <h4>Collage</h4><img src="dag1opgave1banner.gif" alt="Collage">
+                <h4>Film plakat</h4><img src="wild-boys2_banner.gif" alt="Film plakat">
+                <h4>Animation</h4><img src="musik_farver_banner.gif" alt="Musik farver livet">
+                <h4>Reklame kampagne</h4><img src="hasselblad_film_banner.gif" alt="Hasselblad reklamefilm">
+                <h4>Green energies logo</h4><img src="logo-green-energies-banner.gif" alt="Green energies logo">
+                <h4>Hasselblad logo</h4><img src="hasselblad-logo-banner.gif" alt="Hasselblad logo">
+                <h4>Tankespind logo</h4><img src="tankespind_logo_banner.gif" alt="Tankespind logo">
+            </div>
+        </div>
+      </div>
+      <div id="profil" data-role="page">
+        <div data-role="header">
+        <a href="#home">Retur</a>
+        <h3>Profil</h3>
+        </div>
+        <div data-role="content">
+            <a data-transition="slide" data-role="button" href="#portfolio">Portfolio</a>
+            <a data-transition="slide" data-role="button" href="#profil">Profil</a>
+            <a data-transition="slide" data-role="button" href="#kontakt">Kontakt</a>
+            <img src="me_web.gif" alt="Mig">
+            <p>Hej<br>
+               Jeg hedder Yevgeniya Petrenko. Jeg er 29, kom fra Ukraine og bor i Danmark med min familie i 8 år.<br>
+               Jeg er lige begynde at læse multimediedesign og synes, det er meget spændende at lære nye ting hver dag.<br>
+               Jeg kan lave hjemmesider, logoer, plakatter, visitkort, gocard og animation!
+            </p>
+        </div>
+      </div>
+      <div id="kontakt" data-role="page">
+        <div data-role="header">
+        <a href="#home">Retur</a>
+        <h3>Kontakt</h3>
+        </div>
+        <div data-role="content">
+            <a data-transition="slide" data-role="button" href="#portfolio">Portfolio</a>
+            <a data-transition="slide" data-role="button" href="#profil">Profil</a>
+            <a data-transition="slide" data-role="button" href="#kontakt">Kontakt</a>
+            <div id="map">
+                <img src="map_web.gif" alt="Map">
+            </div>
+            <p>Yevgeniya Petrenko<br>
+               Nørrebro 11<br>
+               4653 Karise<br>
+               Danmark<br>
+               +4552801191<br>
+               masechka1983@gmail.com
+            </p>
+        </div>
+      </div>
+    
+
+
+</body>
+</html>
